@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b101b">
+  <meta name="description" content="Game DNS Pro — Gaming DNS and configuration tools">
+  <title>Game DNS Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Game DNS Pro">
+        <span class="brand-mark"><span>G</span><i></i></span>
+        <span class="brand-copy"><strong>GAME DNS <b>PRO</b></strong><small>GAMING NETWORK SUITE</small></span>
+      </a>
+      <div class="side-label" data-i18n="workspace">فضای کاری</div>
+      <nav class="side-nav">
+        <button class="nav-item active" data-page="overview"><span class="nav-icon">⌂</span><span data-i18n="overview">نمای کلی</span></button>
+        <button class="nav-item" data-page="dns"><span class="nav-icon">◈</span><span data-i18n="dnsLab">آزمایشگاه DNS</span><em class="nav-soon">01</em></button>
+        <button class="nav-item" data-page="configs"><span class="nav-icon">⌘</span><span data-i18n="configLab">مدیریت کانفیگ</span><em class="nav-soon">02</em></button>
+        <button class="nav-item" data-page="network"><span class="nav-icon">⌁</span><span data-i18n="networkLab">ابزارهای شبکه</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="private-card"><span class="private-dot"></span><div><strong data-i18n="personalWorkspace">فضای شخصی</strong><small data-i18n="localPreview">پیش‌نمایش محلی</small></div></div>
+        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span><span data-i18n="settings">تنظیمات</span></button>
+        <div class="side-version">GAME DNS PRO <span>v0.1.0</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark small"><span>G</span><i></i></span><strong>GAME DNS <b>PRO</b></strong></div>
+        <div class="breadcrumb"><span data-i18n="workspace">فضای کاری</span><i>/</i><strong id="page-name" data-i18n="overview">نمای کلی</strong></div>
+        <div class="top-actions">
+          <span class="system-status"><i></i><span data-i18n="systemStandby">سیستم آماده‌به‌کار</span></span>
+          <button class="language-button" id="language-toggle" aria-label="Change language">EN <span>⌄</span></button>
+          <div class="avatar">AR</div>
+        </div>
+      </header>
+
+      <section class="page active" id="page-overview">
+        <div class="welcome-row">
+          <div><div class="eyebrow"><span></span><span data-i18n="controlCenter">GAMING NETWORK CONTROL CENTER</span></div>
+            <h1><span data-i18n="welcome">مرکز کنترل</span> <span class="accent-text">Game DNS Pro</span></h1>
+            <p data-i18n="welcomeSub">ابزارهای DNS و مدیریت کانفیگ بازی‌های آنلاین، در یک فضای یکپارچه.</p>
+          </div>
+          <div class="date-chip"><span class="date-icon">◷</span><span data-i18n="phaseOne">مرحله اول · راه‌اندازی</span></div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-grid"></div><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+          <div class="hero-content">
+            <div class="hero-kicker"><span class="live-dot"></span><span data-i18n="platformStatus">وضعیت پلتفرم</span></div>
+            <h2 data-i18n="buildYourConnection">اتصال بهتر، با کنترل بیشتر.</h2>
+            <p data-i18n="heroText">ابزارهای شبکه‌ات را مدیریت کن؛ از بررسی DNS تا آماده‌سازی کانفیگ‌های اتصال.</p>
+            <button class="primary-button" data-go="dns"><span>◈</span><span data-i18n="openDnsLab">ورود به آزمایشگاه DNS</span><b>↗</b></button>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="core-ring ring-one"></div><div class="core-ring ring-two"></div><div class="core-center"><span>G</span><small>NETWORK<br>CORE</small></div><i class="spark spark-one"></i><i class="spark spark-two"></i><i class="spark spark-three"></i></div>
+          <div class="hero-index">01 <span>/ 04</span></div>
+        </div>
+
+        <div class="section-heading"><div><span class="section-overline" data-i18n="quickAccess">QUICK ACCESS</span><h3 data-i18n="toolsAndModules">ابزارها و ماژول‌ها</h3></div><span class="section-note" data-i18n="modulesCount">۴ ماژول اصلی</span></div>
+        <div class="module-grid">
+          <button class="module-card dns-card" data-go="dns"><span class="module-symbol">◈</span><span class="module-tag">01 / DNS</span><strong data-i18n="dnsLab">آزمایشگاه DNS</strong><small data-i18n="dnsDescription">بررسی و مدیریت DNSهای بازی</small><span class="module-arrow">↗</span><span class="module-glow"></span></button>
+          <button class="module-card config-card" data-go="configs"><span class="module-symbol">⌘</span><span class="module-tag">02 / CONFIG</span><strong data-i18n="configLab">مدیریت کانفیگ</strong><small data-i18n="configDescription">پروفایل‌ها و تنظیمات اتصال</small><span class="module-arrow">↗</span><span class="module-glow"></span></button>
+          <button class="module-card network-card" data-go="network"><span class="module-symbol">⌁</span><span class="module-tag">03 / NETWORK</span><strong data-i18n="networkLab">ابزارهای شبکه</strong><small data-i18n="networkDescription">آزمایش و تحلیل وضعیت شبکه</small><span class="module-arrow">↗</span><span class="module-glow"></span></button>
+          <button class="module-card settings-card" data-go="settings"><span class="module-symbol">⚙</span><span class="module-tag">04 / SYSTEM</span><strong data-i18n="settings">تنظیمات</strong><small data-i18n="settingsDescription">زبان و ترجیحات محیط</small><span class="module-arrow">↗</span><span class="module-glow"></span></button>
+        </div>
+
+        <div class="bottom-grid">
+          <div class="status-panel">
+            <div class="panel-heading"><div><span class="section-overline" data-i18n="engineStatus">ENGINE STATUS</span><h3 data-i18n="systemModules">وضعیت موتورهای سیستم</h3></div><span class="status-pill pending" data-i18n="initializing">در حال راه‌اندازی</span></div>
+            <div class="engine-row"><span class="engine-icon dns-icon">◈</span><div class="engine-info"><strong>DNS Engine</strong><small data-i18n="dnsEngineDesc">آماده اتصال به سرویس‌های معتبر</small></div><span class="engine-state" data-i18n="notConnected">متصل نشده</span></div>
+            <div class="engine-row"><span class="engine-icon config-icon">⌘</span><div class="engine-info"><strong>Config Engine</strong><small data-i18n="configEngineDesc">نیازمند زیرساخت سرور واقعی</small></div><span class="engine-state" data-i18n="notConfigured">پیکربندی نشده</span></div>
+          </div>
+          <div class="notice-panel"><span class="notice-icon">i</span><div><strong data-i18n="honestStatus">وضعیت واقعی، بدون عددسازی</strong><p data-i18n="honestText">هنوز هیچ DNS یا سروری تست نشده است. نتایج و سرعت‌ها فقط پس از پیاده‌سازی و اندازه‌گیری واقعی نمایش داده می‌شوند.</p></div></div>
+        </div>
+        <footer class="footer"><span>GAME DNS PRO <b>·</b> A PROJECT BY AHMADREZA</span><span>BUILD 0.1.0</span></footer>
+      </section>
+
+      <section class="page placeholder-page" id="page-dns"><div class="page-title"><span class="section-overline">01 / DNS ENGINE</span><h1 data-i18n="dnsLab">آزمایشگاه DNS</h1><p data-i18n="dnsPageIntro">مدیریت و بررسی سرویس‌های DNS برای بازی‌های آنلاین.</p></div><div class="coming-panel"><span class="coming-icon">◈</span><span class="status-pill pending" data-i18n="inDevelopment">در حال توسعه</span><h2 data-i18n="dnsEngineNext">موتور DNS در مرحله پیاده‌سازی است</h2><p data-i18n="dnsEngineNextSub">در این بخش فهرست سرویس‌های معتبر، آزمون پاسخ‌دهی و خروجی تنظیمات اضافه می‌شود. تا پیش از تست واقعی، هیچ نتیجه‌ای ساختگی نمایش داده نمی‌شود.</p><button class="secondary-button" data-go="overview" data-i18n="backToOverview">بازگشت به نمای کلی</button></div></section>
+      <section class="page placeholder-page" id="page-configs"><div class="page-title"><span class="section-overline">02 / CONFIG ENGINE</span><h1 data-i18n="configLab">مدیریت کانفیگ</h1><p data-i18n="configPageIntro">مدیریت پروفایل‌ها و فایل‌های تنظیمات اتصال.</p></div><div class="coming-panel"><span class="coming-icon">⌘</span><span class="status-pill pending" data-i18n="inDevelopment">در حال توسعه</span><h2 data-i18n="configEngineNext">موتور کانفیگ در انتظار زیرساخت واقعی است</h2><p data-i18n="configEngineNextSub">ساخت کانفیگ WireGuard قابل اتصال به سرور واقعی نیاز دارد. در این بخش فقط پس از فراهم شدن زیرساخت، پروفایل واقعی تولید خواهد شد.</p><button class="secondary-button" data-go="overview" data-i18n="backToOverview">بازگشت به نمای کلی</button></div></section>
+      <section class="page placeholder-page" id="page-network"><div class="page-title"><span class="section-overline">03 / NETWORK LAB</span><h1 data-i18n="networkLab">ابزارهای شبکه</h1><p data-i18n="networkPageIntro">اندازه‌گیری و تحلیل رفتار اتصال شبکه.</p></div><div class="coming-panel"><span class="coming-icon">⌁</span><span class="status-pill pending" data-i18n="inDevelopment">در حال توسعه</span><h2 data-i18n="networkNext">ابزارهای سنجش شبکه در راه‌اند</h2><p data-i18n="networkNextSub">تست‌های قابل اتکا باید از دستگاه و با روش اندازه‌گیری مشخص اجرا شوند؛ پینگ DNS با پینگ داخل بازی یکسان نیست.</p><button class="secondary-button" data-go="overview" data-i18n="backToOverview">بازگشت به نمای کلی</button></div></section>
+      <section class="page placeholder-page" id="page-settings"><div class="page-title"><span class="section-overline">04 / SYSTEM</span><h1 data-i18n="settings">تنظیمات</h1><p data-i18n="settingsPageIntro">تنظیمات پایه محیط Game DNS Pro.</p></div><div class="settings-panel"><div class="setting-row"><div><strong data-i18n="interfaceLanguage">زبان رابط کاربری</strong><small data-i18n="languageDesc">زبان نمایش پنل را انتخاب کن.</small></div><button class="language-button" id="language-toggle-settings">EN <span>⌄</span></button></div><div class="setting-row"><div><strong data-i18n="projectVersion">نسخه پروژه</strong><small>Game DNS Pro · 0.1.0</small></div><span class="status-pill pending" data-i18n="foundation">مرحله پایه</span></div></div></section>
+      <nav class="mobile-nav"><button class="mobile-nav-item active" data-page="overview"><span>⌂</span><small data-i18n="overview">نمای کلی</small></button><button class="mobile-nav-item" data-page="dns"><span>◈</span><small>DNS</small></button><button class="mobile-nav-item" data-page="configs"><span>⌘</span><small data-i18n="configShort">کانفیگ</small></button><button class="mobile-nav-item" data-page="network"><span>⌁</span><small data-i18n="networkShort">شبکه</small></button><button class="mobile-nav-item" data-page="settings"><span>⚙</span><small data-i18n="settings">تنظیمات</small></button></nav>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
