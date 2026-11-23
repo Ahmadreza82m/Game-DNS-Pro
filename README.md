@@ -1,27 +1,19 @@
 # Game DNS Pro
 
-**Gaming DNS & Configuration Platform**
+A mobile-first gaming network toolkit for DNS inspection and connection configuration.
 
-A private, mobile-first control panel for gaming DNS tools and network configuration.
+## Current build: 0.2.0
+- Responsive Persian (RTL) and English (LTR) interface.
+- DNS Lab performs live DNS-over-HTTPS A-record queries against Cloudflare and Google Public DNS.
+- Each resolver is queried twice; the median browser request time is displayed.
+- Resolver IPs can be copied for manual configuration.
+- Config generation is intentionally not enabled until a real server is available.
 
-## Project status
+## Measurement limits
+The displayed time is the browser's HTTPS request duration to a DoH endpoint. It is not ICMP ping, in-game latency, or a measurement of Android's currently configured system resolver. Browser cache, network route, VPN, endpoint reachability, and device load affect results.
 
-- Phase 1: project foundation and responsive interface
-- DNS engine: not connected yet; no resolver is presented as tested
-- Configuration engine: planned; real WireGuard profiles require a real server
-- Languages: Persian (RTL) and English (LTR)
+## Run
+Open `index.html` in a modern browser. DoH tests require internet access and browser access to the public endpoints.
 
-## Safety
-
-Do not commit API tokens, passwords, private keys, or other secrets. Configure secrets in the hosting provider's secret manager.
-
-## Run locally
-
-Open `index.html` in a browser. This first stage is a static frontend and does not yet provide live DNS measurements or downloadable VPN configurations.
-
-## Planned architecture
-
-- Frontend: HTML, CSS, JavaScript
-- Hosting/API: Cloudflare Pages and Workers
-- Database: Cloudflare D1 (after the API design is ready)
-- Source control: GitHub
+## Security
+Never commit API tokens, passwords, private keys, or WireGuard credentials. Keep secrets in the hosting provider's secret manager.
